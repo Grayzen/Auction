@@ -142,7 +142,8 @@ class ProductController extends Controller
         else
         {
             $user->save();
-            $user1->save();
+            if(isset($user1))
+                $user1->save();
         }
             
         
